@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M7uC5ohl5Mx40/FXaHYGkRGMy9e13lHwoaGy5e+Qw9dw8sNJoRAISvBI27hzc4gq5PLYOkV3/MJq61MgTDQ26g==",
+  "success": true,
+  "projectFilePath": "D:\\Visual Studio Software\\Software\\smallEdu\\smallEdu\\smallEdu.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\win10\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.25\\microsoft.windows.sdk.net.ref.10.0.22000.25.nupkg.sha512"
+  ],
+  "logs": []
+}
