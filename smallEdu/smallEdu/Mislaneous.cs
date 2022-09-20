@@ -13,10 +13,7 @@ namespace smallEdu
         public static string dataBaseDirectory = "Database";
         public static string s_streemPath = "courselist\\";
         public static string s_streemFileExtn = ".txt";
-        public enum e_streem { XI = 14, XII, Bachelor, Master };
-
-
-
+        public enum E_streem { XI = 14, XII, Bachelor, Master };
 
     }
 

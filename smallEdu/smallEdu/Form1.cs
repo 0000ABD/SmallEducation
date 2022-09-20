@@ -3,7 +3,9 @@ namespace smallEdu
 {
     public partial class smallEdu : Form
     {
-        const String notAllowed = "[0-9 \\[\\]{ \"}~`!@#$%\\^&\\*()\\-_+=|\\':;/><]+";
+        const String notAllowedNameCharecter = "[0-9 \\[\\]{ \"}~`!@#$%\\^&\\*()\\-_+=|\\':;/><]+";
+        const String notAllowedContactCharecter = "[a-z A-Z\\[\\]{ \"}~`!@#$%\\^&\\*()\\-_+=|\\':;/><]";
+        
         public LocalDatabase lbDataBase;
         public static st_Standards st_StdCount;
         private DebugLogger log;
@@ -68,7 +70,7 @@ namespace smallEdu
 
         private void TB_newStudentFatherName_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(TB_newStudentFatherName.Text, notAllowed))
+            if (System.Text.RegularExpressions.Regex.IsMatch(TB_newStudentFatherName.Text, notAllowedNameCharecter))
             {
                 LB_newStudentFatherName.ForeColor = Color.Red;
             }
@@ -81,7 +83,7 @@ namespace smallEdu
 
         private void TB_newStudentMotherName_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(TB_newStudentMotherName.Text, notAllowed))
+            if (System.Text.RegularExpressions.Regex.IsMatch(TB_newStudentMotherName.Text, notAllowedNameCharecter))
             {
                 LB_newStudentMotherName.ForeColor = Color.Red;
             }
@@ -94,7 +96,7 @@ namespace smallEdu
 
         private void TB_newStudentFullName_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(TB_newStudentFullName.Text, notAllowed))
+            if (System.Text.RegularExpressions.Regex.IsMatch(TB_newStudentFullName.Text, notAllowedNameCharecter))
             {
                 LB_newStudent.ForeColor = Color.Red;
             }
@@ -106,41 +108,63 @@ namespace smallEdu
 
         private void CB_newStudentStanderd_SelectedIndexChanged(object sender, EventArgs e)
         {
-            log.logDebugStatement(CB_newStudentStanderd.SelectedIndex.ToString());
-            switch ((Mislaneous.e_streem)CB_newStudentStanderd.SelectedIndex)  
-            {
-                case Mislaneous.e_streem.XI:
-                case Mislaneous.e_streem.XII:
-                case Mislaneous.e_streem.Bachelor:
-                case Mislaneous.e_streem.Master:
-                    CB_newStudentStreem.Enabled = true;     /*Enable streem selection combobox*/
-                    break;
-                default:
-                    CB_newStudentStreem.Enabled = false;  /*Enable streem selection combobox*/
-                    CB_newStudentStreem.Items.Clear();
-                    break;
-            }
+            
 
             try
             {
-                string s_file = Mislaneous.s_streemPath + Enum.GetName((Enum)Mislaneous.e_streem,(Mislaneous.e_streem)CB_newStudentStanderd.SelectedIndex) + Mislaneous.s_streemFileExtn)
-                switch ((Mislaneous.e_streem)CB_newStudentStanderd.SelectedIndex)
+                string s_file = ""; 
+     
+                log.logDebugStatement(CB_newStudentStanderd.SelectedIndex.ToString());
+                switch ((Mislaneous.E_streem)CB_newStudentStanderd.SelectedIndex)
                 {
-                    case Mislaneous.e_streem.XI:
-                        CB_newStudentStreem.Items.Add
+                    case Mislaneous.E_streem.XI:
+                    case Mislaneous.E_streem.XII:
+                    case Mislaneous.E_streem.Bachelor:
+                    case Mislaneous.E_streem.Master:
+                        CB_newStudentStreem.Enabled = true;     /*Enable streem selection combobox*/
+                        CB_newStudentStreem.Items.Clear();
+                        s_file = Mislaneous.s_streemPath + Enum.GetName(typeof(Mislaneous.E_streem), CB_newStudentStanderd.SelectedIndex) + Mislaneous.s_streemFileExtn;
+                        String[] s_lines = File.ReadAllLines(s_file);
+                        CB_newStudentStreem.Items.AddRange(s_lines);
                         break;
-                    case Mislaneous.e_streem.XII:
-                        break;
-                    case Mislaneous.e_streem.Bachelor:
-                        break;
-                    case Mislaneous.e_streem.Master:
+                    default:
+                        CB_newStudentStreem.Enabled = false;  /*Enable streem selection combobox*/
+                        CB_newStudentStreem.Items.Clear();
                         break;
                 }
+                 //= s_lines[0];
+               
+
+       
+                /* switch ((Mislaneous.E_streem)CB_newStudentStanderd.SelectedIndex)
+                {
+                    case Mislaneous.E_streem.XI:
+                        CB_newStudentStreem.Items.Add(File.ReadAllText(s_file));
+                        break;
+                    case Mislaneous.E_streem.XII:
+                        break;
+                    case Mislaneous.E_streem.Bachelor:
+                        break;
+                    case Mislaneous.E_streem.Master:
+                        break;
+                }*/
             }
             catch(Exception ex)
             {
                 log.logDebugStatement(ex.Message);
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void TB_newStudentContactNumber_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(TB_newStudentContactNumber.Text, notAllowedContactCharecter))
+            {
+                LB_newStudentContactNumber.ForeColor = Color.Red;
+            }
+            else
+            {
+                LB_newStudentContactNumber.ForeColor = Color.Black;
             }
         }
     }

@@ -53,6 +53,8 @@
             this.TB_addStudent = new System.Windows.Forms.TabPage();
             this.GB_addNewStudent = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TB_newStudentTempAddress = new System.Windows.Forms.TextBox();
+            this.LB_newStudentTempAddress = new System.Windows.Forms.Label();
             this.LB_newStudentStreem = new System.Windows.Forms.Label();
             this.CB_newStudentStreem = new System.Windows.Forms.ComboBox();
             this.TB_newStudentContactNumber = new System.Windows.Forms.TextBox();
@@ -243,6 +245,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.TB_newStudentTempAddress);
+            this.groupBox2.Controls.Add(this.LB_newStudentTempAddress);
             this.groupBox2.Controls.Add(this.LB_newStudentStreem);
             this.groupBox2.Controls.Add(this.CB_newStudentStreem);
             this.groupBox2.Controls.Add(this.TB_newStudentContactNumber);
@@ -264,6 +268,16 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // TB_newStudentTempAddress
+            // 
+            resources.ApplyResources(this.TB_newStudentTempAddress, "TB_newStudentTempAddress");
+            this.TB_newStudentTempAddress.Name = "TB_newStudentTempAddress";
+            // 
+            // LB_newStudentTempAddress
+            // 
+            resources.ApplyResources(this.LB_newStudentTempAddress, "LB_newStudentTempAddress");
+            this.LB_newStudentTempAddress.Name = "LB_newStudentTempAddress";
+            // 
             // LB_newStudentStreem
             // 
             resources.ApplyResources(this.LB_newStudentStreem, "LB_newStudentStreem");
@@ -280,6 +294,7 @@
             // 
             resources.ApplyResources(this.TB_newStudentContactNumber, "TB_newStudentContactNumber");
             this.TB_newStudentContactNumber.Name = "TB_newStudentContactNumber";
+            this.TB_newStudentContactNumber.TextChanged += new System.EventHandler(this.TB_newStudentContactNumber_TextChanged);
             // 
             // LB_newStudentContactNumber
             // 
@@ -461,5 +476,7 @@
         private Label LB_newStudentContactNumber;
         private ComboBox CB_newStudentStreem;
         private Label LB_newStudentStreem;
+        private TextBox TB_newStudentTempAddress;
+        private Label LB_newStudentTempAddress;
     }
 }

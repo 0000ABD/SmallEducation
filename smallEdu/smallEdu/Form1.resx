@@ -607,6 +607,60 @@
   <data name="&gt;&gt;TB_login.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="TB_newStudentTempAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 508</value>
+  </data>
+  <data name="TB_newStudentTempAddress.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>239, 23</value>
+  </data>
+  <data name="TB_newStudentTempAddress.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>239, 23</value>
+  </data>
+  <data name="TB_newStudentTempAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 23</value>
+  </data>
+  <data name="TB_newStudentTempAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;TB_newStudentTempAddress.Name" xml:space="preserve">
+    <value>TB_newStudentTempAddress</value>
+  </data>
+  <data name="&gt;&gt;TB_newStudentTempAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TB_newStudentTempAddress.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TB_newStudentTempAddress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LB_newStudentTempAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_newStudentTempAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 490</value>
+  </data>
+  <data name="LB_newStudentTempAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 15</value>
+  </data>
+  <data name="LB_newStudentTempAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="LB_newStudentTempAddress.Text" xml:space="preserve">
+    <value>* Tenmporary Address</value>
+  </data>
+  <data name="&gt;&gt;LB_newStudentTempAddress.Name" xml:space="preserve">
+    <value>LB_newStudentTempAddress</value>
+  </data>
+  <data name="&gt;&gt;LB_newStudentTempAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_newStudentTempAddress.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;LB_newStudentTempAddress.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="LB_newStudentStreem.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -632,7 +686,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;LB_newStudentStreem.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="CB_newStudentStreem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -656,16 +710,16 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;CB_newStudentStreem.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="TB_newStudentContactNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 456</value>
+    <value>6, 452</value>
   </data>
   <data name="TB_newStudentContactNumber.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>239, 23</value>
   </data>
   <data name="TB_newStudentContactNumber.MaxLength" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="TB_newStudentContactNumber.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>239, 23</value>
@@ -675,9 +729,6 @@
   </data>
   <data name="TB_newStudentContactNumber.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
-  </data>
-  <data name="TB_newStudentContactNumber.Text" xml:space="preserve">
-    <value>+91</value>
   </data>
   <data name="&gt;&gt;TB_newStudentContactNumber.Name" xml:space="preserve">
     <value>TB_newStudentContactNumber</value>
@@ -689,13 +740,13 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;TB_newStudentContactNumber.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="LB_newStudentContactNumber.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LB_newStudentContactNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 434</value>
+    <value>6, 434</value>
   </data>
   <data name="LB_newStudentContactNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 15</value>
@@ -716,10 +767,10 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;LB_newStudentContactNumber.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="TB_newStudentFatherName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 115</value>
+    <value>6, 106</value>
   </data>
   <data name="TB_newStudentFatherName.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 23</value>
@@ -737,7 +788,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;TB_newStudentFatherName.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="BT_newStudentBrowseImage.Location" type="System.Drawing.Point, System.Drawing">
     <value>586, 190</value>
@@ -767,7 +818,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;BT_newStudentBrowseImage.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="PB_newStudentPicture.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 21</value>
@@ -818,7 +869,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;GB_newStudentImage.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="LB_newStudentStandard.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -845,7 +896,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;LB_newStudentStandard.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="CB_newStudentStanderd.Items" xml:space="preserve">
     <value>LKG</value>
@@ -923,7 +974,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;CB_newStudentStanderd.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="CAL_newStudentDateOfBirth.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 261</value>
@@ -941,7 +992,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;CAL_newStudentDateOfBirth.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="LB_newStudentDob.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -968,7 +1019,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;LB_newStudentDob.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="TB_newStudentDateOfBirth.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 226</value>
@@ -995,10 +1046,10 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;TB_newStudentDateOfBirth.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="TB_newStudentMotherName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 173</value>
+    <value>6, 161</value>
   </data>
   <data name="TB_newStudentMotherName.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 23</value>
@@ -1016,13 +1067,13 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;TB_newStudentMotherName.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="LB_newStudentMotherName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LB_newStudentMotherName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 155</value>
+    <value>6, 141</value>
   </data>
   <data name="LB_newStudentMotherName.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 15</value>
@@ -1043,7 +1094,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;LB_newStudentMotherName.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="LB_newStudentFatherName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1070,7 +1121,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;LB_newStudentFatherName.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="LB_newStudent.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1097,7 +1148,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;LB_newStudent.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="TB_newStudentFullName.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 53</value>
@@ -1118,7 +1169,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;TB_newStudentFullName.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 22</value>
@@ -1639,6 +1690,9 @@
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>743, 701</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>smallEdu_v0.1</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>smallEdu</value>
