@@ -53,14 +53,18 @@
             this.TB_addStudent = new System.Windows.Forms.TabPage();
             this.GB_addNewStudent = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.LB_newStudentStreem = new System.Windows.Forms.Label();
+            this.CB_newStudentStreem = new System.Windows.Forms.ComboBox();
+            this.TB_newStudentContactNumber = new System.Windows.Forms.TextBox();
+            this.LB_newStudentContactNumber = new System.Windows.Forms.Label();
             this.TB_newStudentFatherName = new System.Windows.Forms.TextBox();
             this.BT_newStudentBrowseImage = new System.Windows.Forms.Button();
             this.GB_newStudentImage = new System.Windows.Forms.GroupBox();
             this.PB_newStudentPicture = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.LB_newStudentStandard = new System.Windows.Forms.Label();
             this.CB_newStudentStanderd = new System.Windows.Forms.ComboBox();
             this.CAL_newStudentDateOfBirth = new System.Windows.Forms.MonthCalendar();
-            this.label11 = new System.Windows.Forms.Label();
+            this.LB_newStudentDob = new System.Windows.Forms.Label();
             this.TB_newStudentDateOfBirth = new System.Windows.Forms.TextBox();
             this.TB_newStudentMotherName = new System.Windows.Forms.TextBox();
             this.LB_newStudentMotherName = new System.Windows.Forms.Label();
@@ -239,13 +243,17 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.LB_newStudentStreem);
+            this.groupBox2.Controls.Add(this.CB_newStudentStreem);
+            this.groupBox2.Controls.Add(this.TB_newStudentContactNumber);
+            this.groupBox2.Controls.Add(this.LB_newStudentContactNumber);
             this.groupBox2.Controls.Add(this.TB_newStudentFatherName);
             this.groupBox2.Controls.Add(this.BT_newStudentBrowseImage);
             this.groupBox2.Controls.Add(this.GB_newStudentImage);
-            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.LB_newStudentStandard);
             this.groupBox2.Controls.Add(this.CB_newStudentStanderd);
             this.groupBox2.Controls.Add(this.CAL_newStudentDateOfBirth);
-            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.LB_newStudentDob);
             this.groupBox2.Controls.Add(this.TB_newStudentDateOfBirth);
             this.groupBox2.Controls.Add(this.TB_newStudentMotherName);
             this.groupBox2.Controls.Add(this.LB_newStudentMotherName);
@@ -256,6 +264,28 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // LB_newStudentStreem
+            // 
+            resources.ApplyResources(this.LB_newStudentStreem, "LB_newStudentStreem");
+            this.LB_newStudentStreem.Name = "LB_newStudentStreem";
+            // 
+            // CB_newStudentStreem
+            // 
+            this.CB_newStudentStreem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.CB_newStudentStreem, "CB_newStudentStreem");
+            this.CB_newStudentStreem.FormattingEnabled = true;
+            this.CB_newStudentStreem.Name = "CB_newStudentStreem";
+            // 
+            // TB_newStudentContactNumber
+            // 
+            resources.ApplyResources(this.TB_newStudentContactNumber, "TB_newStudentContactNumber");
+            this.TB_newStudentContactNumber.Name = "TB_newStudentContactNumber";
+            // 
+            // LB_newStudentContactNumber
+            // 
+            resources.ApplyResources(this.LB_newStudentContactNumber, "LB_newStudentContactNumber");
+            this.LB_newStudentContactNumber.Name = "LB_newStudentContactNumber";
+            // 
             // TB_newStudentFatherName
             // 
             resources.ApplyResources(this.TB_newStudentFatherName, "TB_newStudentFatherName");
@@ -264,7 +294,7 @@
             // 
             // BT_newStudentBrowseImage
             // 
-           resources.ApplyResources(this.BT_newStudentBrowseImage, "BT_newStudentBrowseImage");
+            resources.ApplyResources(this.BT_newStudentBrowseImage, "BT_newStudentBrowseImage");
             this.BT_newStudentBrowseImage.Name = "BT_newStudentBrowseImage";
             this.BT_newStudentBrowseImage.UseVisualStyleBackColor = true;
             this.BT_newStudentBrowseImage.Click += new System.EventHandler(this.BT_newStudentBrowseImage_Click);
@@ -282,10 +312,10 @@
             this.PB_newStudentPicture.Name = "PB_newStudentPicture";
             this.PB_newStudentPicture.TabStop = false;
             // 
-            // label12
+            // LB_newStudentStandard
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
+            resources.ApplyResources(this.LB_newStudentStandard, "LB_newStudentStandard");
+            this.LB_newStudentStandard.Name = "LB_newStudentStandard";
             // 
             // CB_newStudentStanderd
             // 
@@ -308,9 +338,12 @@
             resources.GetString("CB_newStudentStanderd.Items13"),
             resources.GetString("CB_newStudentStanderd.Items14"),
             resources.GetString("CB_newStudentStanderd.Items15"),
-            resources.GetString("CB_newStudentStanderd.Items16")});
+            resources.GetString("CB_newStudentStanderd.Items16"),
+            resources.GetString("CB_newStudentStanderd.Items17"),
+            resources.GetString("CB_newStudentStanderd.Items18")});
             resources.ApplyResources(this.CB_newStudentStanderd, "CB_newStudentStanderd");
             this.CB_newStudentStanderd.Name = "CB_newStudentStanderd";
+            this.CB_newStudentStanderd.SelectedIndexChanged += new System.EventHandler(this.CB_newStudentStanderd_SelectedIndexChanged);
             // 
             // CAL_newStudentDateOfBirth
             // 
@@ -322,10 +355,10 @@
             this.CAL_newStudentDateOfBirth.ShowTodayCircle = false;
             this.CAL_newStudentDateOfBirth.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.CAL_newStudentDateOfBirth_DateSelected);
             // 
-            // label11
+            // LB_newStudentDob
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.LB_newStudentDob, "LB_newStudentDob");
+            this.LB_newStudentDob.Name = "LB_newStudentDob";
             // 
             // TB_newStudentDateOfBirth
             // 
@@ -416,13 +449,17 @@
         private Label LB_newStudent;
         private TextBox TB_newStudentFullName;
         private MonthCalendar CAL_newStudentDateOfBirth;
-        private Label label11;
+        private Label LB_newStudentDob;
         private TextBox TB_newStudentDateOfBirth;
-        private Label label12;
+        private Label LB_newStudentStandard;
         private ComboBox CB_newStudentStanderd;
         private Button BT_newStudentBrowseImage;
         private GroupBox GB_newStudentImage;
         private PictureBox PB_newStudentPicture;
         private TextBox TB_newStudentFatherName;
+        private TextBox TB_newStudentContactNumber;
+        private Label LB_newStudentContactNumber;
+        private ComboBox CB_newStudentStreem;
+        private Label LB_newStudentStreem;
     }
 }
